@@ -18,7 +18,7 @@ public class RefDemo {
         Runnable r1 = Stuff::threadTask;
         Thread t = new Thread(r1);
         t.start();
-
+         //here we do how to refer instance method
         Stuff stuff = new Stuff();
         Runnable r2 = stuff::doStuffForNonStaticMethod;
         Thread t1 = new Thread(r2);
