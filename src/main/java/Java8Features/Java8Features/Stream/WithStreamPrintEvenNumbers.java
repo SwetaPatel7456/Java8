@@ -18,5 +18,14 @@ public class WithStreamPrintEvenNumbers {
         //stream.mapToDouble();
         //stream api basically used to group the colections object
         //it is also used to
+        List<Integer> numbers = List.of(1,2,3,4,5);
+        numbers.stream().sorted().forEach(System.out::println);
+        List<Integer> numbers1 = List.of(1,2);
+        Integer i1 = numbers1.stream().min((x,y)->x.compareTo(y)).get();
+        System.out.println(i1);
+
     }
+
+
+
 }
