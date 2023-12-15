@@ -58,9 +58,5 @@ public class ImmutableClass {
 		e.speed = 70;
 		System.out.println(ic.getEn().speed);
 		
-		
-		
-		
 	}
-
 }

@@ -6,3 +6,12 @@ public interface MyInter {
 //create sepatate class and implement this interface
 //anonymous class for implementing interface
 //lambda expression
+//  psvm(String args[]){
+//
+//  MyInter myInter = ()-{
+//      System.out.println("");
+//  }
+//
+//
+//
+//  }

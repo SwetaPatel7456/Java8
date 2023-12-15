@@ -17,6 +17,12 @@ public class BehaviourParametrization {
 		Function<Integer, Integer> squaremapper = n -> n * n;
 		mapAndCreate(numbers, squaremapper);
 
+		Function<String,String> function = s-> s.toUpperCase();
+		Function<String,String> function1 = s-> s.substring(0,3);
+		Function<String,String> newFunction = function.andThen(function1);
+		System.out.println(newFunction.apply("sweta"));
+
+
 	}
 
 	private static void mapAndCreate(List<Integer> numbers, Function<Integer, Integer> squaremapper) {
